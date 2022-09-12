@@ -797,17 +797,17 @@ command:
       commandList: ' &e/[command]  '
       commandListDelay: ' &6[command]  '
       permReq: '&2Erfordert Benutzerdefinierte Berechtigung: &6[state]'
-      permReqExplanation: '&7Benötigz &6cmi.customalias.[alias] &7zum benutzen'
+      permReqExplanation: '&7Benötigt &6cmi.customalias.[alias] &7zum benutzen'
       newAliasInfo: '&eGib neuen Alias-Befehl ein und drücke Enter'
       addInfo: '&eGib den neuen Befehl ein. Tippe &6cancel &eum die Aktion abzubrechen.'
-      addInformationHover: "&eGlobale Variablen welche in der Senderkathegorie eerlaubt\
+      addInformationHover: "&eGlobale Variablen welche in der Senderkategorie erlaubt\
         \ sind \n&eUm Delay in Befehelen einzubinden: \n&edelay! 5 \n&eWeitere Variablen\
-        \ können sein benuttz Variablen um sie einzufügen \n&e$1 nimmt die angeben\
-        \ Varianble des Aliasbefehles und fügt sie an diesen Platz ein \n$e$1- Nimmt\
-        \ alle weiteren Varianeblen Ab diesem Punkt kann man wie beim orginalen Befehl\
-        \ vorgehn"
+        \ können benutzt werden um sie einzufügen \n&e$1 nimmt die Angaben\
+        \ Variable des Aliasbefehles und fügt sie an diesen Platz ein \n$e$1- Nimmt\
+        \ alle weiteren Variablen Ab diesem Punkt kann man wie beim orginalen Befehl\
+        \ vorgehen"
       editInfo: '&eKlicke hier um den alten Text einzufügen. Schreibe &6cancel &eum
-        die Aktion abzubrechen. Schreibe &6remove &eum die Linie zu löschen'
+        die Aktion abzubrechen. Schreibe &6remove &eum die Zeile zu löschen'
   armorstand:
     help:
       info: '&eÖffne den Rüstungsständer-Editor'
@@ -844,7 +844,7 @@ command:
       args: '[command/-c]'
       explanation:
       - Trenne Befehle mit ;;
-      - Du kannst definieren ob der Kommand mit klicken der rechten oder linken Maustaste
+      - Du kannst definieren ob der Befehl mit klicken der rechten oder linken Maustaste
         einzeln ausgeführt werden soll
       - '!left! um den Befehl mit der linken Maustaste auszuführen'
       - '!right! um den Befehl mit der rechten Maustaste auszuführen'
@@ -1220,7 +1220,7 @@ command:
       shapelessRecipe: '&6Erstelle ein neues formloses Rezept'
       shapedRecipe: '&eErstelle ein neues geformtes Rezept'
       furnaceRecipe: '&2Erstelle ein neues Ofenrezept'
-      mainTitle: '&8Benutzerfefinierte Rezepte (&7[current]&8/&7[total]&8)'
+      mainTitle: '&8Benutzerdefinierte Rezepte (&7[current]&8/&7[total]&8)'
   dback:
     help:
       info: '&eZurück zum Todespunkt'
@@ -1295,7 +1295,7 @@ command:
       addInformationHover: "&eGlobale Variablen werden unterstützt als Senderkategorie\
         \ \n&eUm Klickbare Nachrichten einzusetzen: \n&e<T>&rText&e</T><H>&rHovertext&e</H><C>&rBegehl&e</C><SC>&rempfolen\
         \ text&e</SC> \n&6<T> &eund &6</T> &ebenötigt. Der Rest ist Optional \n&eBenutze\
-        \ \\u005Cn um eine Linie zu brechen \n&eUm mehr als eine Raw-Nachricht zu\
+        \ \\u005Cn um eine Zeile zu brechen \n&eUm mehr als eine Raw-Nachricht zu\
         \ nutzen <Next> \n&6<CC> &ebenutze den Konsolebefehl \n&6<CCI> &eFührt einen\
         \ Konsolebefehl aus immer wenn jemand den Text klickt."
       newInfo: '&eGebe den Namen des neuen Zufallstextes ein. Tippe &6cancel &eum
@@ -1816,7 +1816,7 @@ command:
       addInfo: '&eTippe den neuen Befehl ein. Rippe &6cancel &eum abzubrechen'
       addInformationHover: "&eGlobale Variablen unterstützt aus der Senderkategorie\
         \ \n&eUm Verzögerung einzufügen: \n&edelay! 5 \n&ezusätzlichre Variablen kö\
-        nnen sein bentutz um Variablen an ihrem Platz einzufügen \n&e$1 nimmt eine\
+        nnen benutzt werden um Variablen an ihrem Platz einzufügen \n&e$1 nimmt eine\
         \ vorgesehene Variable von dem Befehl und plaziert diese an diesem Platz \n\
         &e$1- nimmt alle Variablen von diesem Punkt an un fügt diese in den orginalen\
         \ Befehl ein"
@@ -1850,7 +1850,7 @@ command:
       info: '&eImportiert Daten von anderen Plugins'
       args: '[essentials]'
     info:
-      converted: '&eKonvertiert: &6[done]&e/&6[total] &ebenutzer'
+      converted: '&eKonvertiert: &6[done]&e/&6[total] &eBenutzer'
       convertedWarps: '&eKonvertiert &6[amount] &eWarps'
       noInfo: '&cDu hast vergessen zu erwähnen was du genau importieren willst.'
       saving: '&eSpeicher Daten in die CMI-Datenbank'
@@ -3513,7 +3513,7 @@ command:
         DIVE_ONE_CM: Gefahren
         WALK_UNDER_WATER_ONE_CM: Unterwasser gelaufen
         WALK_ON_WATER_ONE_CM: Auf Wasser gelaufen
-        MINECART_ONE_CM: Minecraft gefahren
+        MINECART_ONE_CM: Minecart gefahren
         BOAT_ONE_CM: Boot gefahren
         PIG_ONE_CM: Schwein geritten
         HORSE_ONE_CM: Pferd geritten
@@ -3525,24 +3525,24 @@ command:
         DAMAGE_DEALT_RESISTED: Verursachter Schaden widerstanden
         DAMAGE_BLOCKED_BY_SHIELD: Schaden mit dem Schild geblockt
         DAMAGE_ABSORBED: Schaden absorbiert
-        DAMAGE_RESISTED: Schaden Widerstanden
+        DAMAGE_RESISTED: Schaden widerstanden
         DEATHS: Tode
         ENTITY_KILLED_BY: Getötet von
         MOB_KILLS: Monster getötet
         PLAYER_KILLS: Spieler getötet
-        ITEM_ENCHANTED: Gegenstände Verzaubert
+        ITEM_ENCHANTED: Gegenstände verzaubert
         ANIMALS_BRED: Tiere gebrütet
         FISH_CAUGHT: Fische gefangen
         TALKED_TO_VILLAGER: Mit Dorfbewohnern gesprochen
-        TRADED_WITH_VILLAGER: Mit Dorfbehnern getauscht
+        TRADED_WITH_VILLAGER: Mit Dorfbewohnern getauscht
         CAKE_SLICES_EATEN: Kuchen gegessen
         CAULDRON_FILLED: Kessel gefüllt
         CAULDRON_USED: Kessel benutzt
         ARMOR_CLEANED: Rüstung gereinigt
         BANNER_CLEANED: Banner gereinigt
-        BREWINGSTAND_INTERACTION: Baustände benutzt
+        BREWINGSTAND_INTERACTION: Braustände benutzt
         BEACON_INTERACTION: Leuchtfeuer benutzt
-        CRAFTING_TABLE_INTERACTION: Werkbank bentuzt
+        CRAFTING_TABLE_INTERACTION: Werkbank benutzt
         FURNACE_INTERACTION: Ofen benutzt
         DISPENSER_INSPECTED: Spender inspiziert
         DROPPER_INSPECTED: Werfer inspiziert
@@ -3556,7 +3556,7 @@ command:
         RECORD_PLAYED: Schalplatten abgespielt
         SLEEP_IN_BED: Im Bett geschlafen
         SHULKER_BOX_OPENED: Shulkerboxen geöffnet
-        CLEAN_SHULKER_BOX: Shulker box cleaned
+        CLEAN_SHULKER_BOX: Shulkerboxen gereinigt
         DROP: Gegeenstände fallen gelassen
         MINE_BLOCK: Blöcke abgebaut
         BREAK_ITEM: Gegeenstände zerbrochen
